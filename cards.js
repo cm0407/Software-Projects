@@ -16,16 +16,16 @@ const artifacts = [
   {
     number: 3,
     status: "idea",
-    title: "Artifact 3",
+    title: "Group Shuffle",
     link: "",
-    body: "NO IDEA YET",
+    body: "An interactive web app that allows users to create groups and shuffle them randomly, with the option to set constraints (e.g. certain people cannot be in the same group).",
   },
   {
     number: 4,
-    status: "idea",
-    title: " Artifact 4",
+    status: "",
+    title: " REU's, Internship opportunities for undergraduates Resource Site",
     link: "",
-    body: "NO IDEA YET",
+    body: "A site that compiles a list of REU's and internship opportunities for undergraduates, with the option to filter by field, location, and other criteria. The site would also include resources for applying to these opportunities, such as tips for writing a strong application and advice from past participants.",
   },
   {
     number: 5,
