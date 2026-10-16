@@ -1,10 +1,17 @@
 :root {
-  --bg: #fafaf7;
-  --text: #1d1d1f;
-  --muted: #6b6b6b;
-  --accent: #2f5d8a;
-  --card: #ffffff;
-  --border: #e3e3dd;
+  --bg-top: #03241a;
+  --bg-mid: #042016;
+  --bg-bottom: #010c07;
+  --text: #d8f3e4;
+  --muted: #8db8a3;
+  --accent: #4ade80;
+  --accent-2: #2dd4bf;
+  --card: rgba(6, 36, 24, 0.6);
+  --border: rgba(74, 222, 128, 0.2);
+  --grid-line: rgba(74, 222, 128, 0.05);
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, monospace;
+  --font-math: "Cambria Math", Cambria, "Times New Roman", serif;
 }
 
 * {
@@ -13,57 +20,290 @@
 
 body {
   margin: 0;
-  font-family:
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    sans-serif;
-  background: var(--bg);
+  min-height: 100vh;
+  font-family: var(--font-body);
   color: var(--text);
   line-height: 1.6;
+  /* Layers stack top to bottom: graph-paper lines, a glow, then the gradient */
+  background:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(
+      ellipse 80% 50% at 50% 0%,
+      rgba(74, 222, 128, 0.16),
+      transparent 70%
+    ),
+    linear-gradient(160deg, var(--bg-top), var(--bg-mid) 50%, var(--bg-bottom));
+  background-size:
+    40px 40px,
+    40px 40px,
+    100% 100%,
+    100% 100%;
+  background-color: var(--bg-bottom);
+  background-attachment: fixed;
 }
 
-header,
+::selection {
+  background: rgba(74, 222, 128, 0.3);
+}
+
+/* ---------- Header ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 4.5rem 0 3rem;
+}
+
+#waves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Fade the waves out toward the bottom so they blend into the page */
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+  mask-image: linear-gradient(to bottom, black 70%, transparent);
+}
+
+.hero-content,
 main,
 footer {
+  position: relative;
   max-width: 960px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+  padding: 0 1rem;
+}
+
+.prompt {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.prompt-path {
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(2.2rem, 7vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.name {
+  background: linear-gradient(
+    90deg,
+    #bbf7d0,
+    var(--accent) 55%,
+    var(--accent-2)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cursor {
+  color: var(--accent);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .tagline {
+  margin: 0.75rem 0 0;
+  font-size: 1.1rem;
   color: var(--muted);
-  margin-top: 0.25rem;
 }
+
+.equation {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.75rem 0 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(2, 18, 11, 0.7);
+}
+
+.eq-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.eq-math {
+  font-family: var(--font-math);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+/* ---------- Sections ---------- */
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2.5rem 0 1rem;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h2::before {
+  content: "//";
+  color: var(--accent);
+}
+
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+.panel {
+  padding: 1.25rem 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.panel p {
+  margin: 0;
+}
+
+/* ---------- Cards ---------- */
 
 #card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(74, 222, 128, 0.6);
+  box-shadow: 0 12px 32px -12px rgba(74, 222, 128, 0.4);
+}
+
+.card.done {
+  border-color: rgba(74, 222, 128, 0.45);
 }
 
 .card.idea {
   border-style: dashed;
 }
 
-.badge {
+.card .badge {
+  align-self: flex-start;
   margin: 0;
-  font-size: 0.8rem;
+  padding: 0.2rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.card.done .badge {
+  color: #022c1a;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.card h3 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.card p {
+  margin: 0 0 1.25rem;
+}
+
+/* margin-top: auto pushes the link to the bottom, so links line up across cards */
+.card a,
+.card .muted {
+  align-self: flex-start;
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
 }
 
 .muted {
   color: var(--muted);
 }
+
 a {
   color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.qed {
+  color: var(--accent);
+}
+
+/* Turn off motion for visitors who've asked their computer for less of it */
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
 }

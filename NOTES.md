@@ -10,6 +10,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 - Session 1: Claude web chat (claude.ai)
 - Session 2: Claude Code (VS Code extension)
+- Session 3: Claude Code
 
 ## Session 1: Oct 11
 
@@ -25,7 +26,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 **Asked Claude Code for:**
 
-1. A step-by-step walkthrough of the rest of the spec that explains *why* each step works, not just code to paste.
+1. A step-by-step walkthrough of the rest of the spec that explains _why_ each step works, not just code to paste.
 2. Why `python3 -m http.server 8000` didn't work.
 3. How to add a `.gitignore`.
 4. Whether the live site updates when I save locally.
@@ -54,8 +55,47 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Only one program can use a port at a time. Stop the server with Ctrl+C, or `Stop-Process -Id <id>` if the terminal is gone.
 - `script.js` has to load after `cards.js` because it uses the `artifacts` variable that `cards.js` creates.
 
+## Session 3: Oct 15–16
+
+**Asked Claude Code for:**
+
+1. To work on the Portfolio folder. It reviewed the project and listed what was left from the Session 2 next steps.
+2. To re-explain that list less technically: "try to be not too technical but rather as if you are teaching me software development throughout this process."
+3. To check my fix for the Artifact 4 card. The first time, my edits didn't show up because I hadn't saved the file.
+4. A redesign: "lets add some techyness, mathyness to it. I like a green gradient dark mode background, advance the look."
+5. Why the redesign looked exactly the same when I ran it locally.
+6. To add this session to the log.
+
+**Decided:**
+
+- Fixed the Artifact 4 card myself: set its `status` to `"idea"` so it gets the dashed border, and deleted the out-of-date "fill in after deploying" comment in `cards.js`. Committed and pushed it on my own.
+- Redesigned the site:
+  - Dark green gradient background with faint graph-paper lines, made from layered CSS gradients instead of an image.
+  - All colors and fonts named once as CSS variables at the top of `style.css`.
+  - Two fonts: JetBrains Mono (a coding font) for my name, headings, and labels, and Inter for paragraphs.
+  - A terminal-style header (`~/portfolio $ whoami`) with a blinking cursor after my name.
+  - Animated sine waves behind the header, drawn on a `<canvas>` by a new file, `waves.js`. I kept it separate from `script.js` so each file has one job. The waves stay still for visitors who turn on "reduce motion."
+  - An equation box showing Euler's method, a nod to my SLMath research on numerical methods for differential equations.
+  - `//` before section headings, cards that lift and glow on hover, a solid green badge on finished cards, and ∎ (end of proof) in the footer.
+- Kept my About text and card text word for word. Only the design changed.
+- Added `waves.js` to the file lists in `README.md` and `CLAUDE.md`.
+
+**Abandoned:**
+
+- The first position of the waves, which ran through the "Mathematics + Computer Science" line and made it harder to read. They now sit lower, behind the equation box.
+
+**Takeaways:**
+
+- Typing in VS Code doesn't change the file until I save it. A white dot on the tab means unsaved changes, and File → Auto Save saves automatically.
+- `git diff` shows exactly what changed since my last commit. It's a good check before committing.
+- The Artifact 4 bug was easy to miss because the badge still said "Idea" while the border was wrong. When code makes a choice based on a value, think about what happens if that value is blank.
+- Browsers cache files, so a page can look unchanged after an edit. Ctrl+F5 forces a fresh download, a private window (Ctrl+Shift+N) starts with no cache, and F12 → Network → "Disable cache" turns caching off while Developer Tools is open.
+- A new file is "untracked" until `git add` includes it. `git add .` adds every change in the folder, so run `git status` first to see what that includes.
+- Animation on a canvas is a flipbook: about 60 times a second the code erases the canvas and redraws the waves a little further along in time.
+
 ## Next steps
 
 - [ ] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
-- [ ] Set the Artifact 4 card's `status` to `"idea"` (it's empty, so it doesn't get the dashed border)
+- [x] Set the Artifact 4 card's `status` to `"idea"` (it's empty, so it doesn't get the dashed border)
 - [ ] Confirm the live link is submitted on Canvas
+- [ ] Decide whether to keep Euler's method in the header or swap in another equation

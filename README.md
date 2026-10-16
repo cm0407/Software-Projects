@@ -15,7 +15,8 @@ Plain HTML, CSS, and JavaScript. No framework, build step, or server. Hosted on 
 | `index.html` | Page layout and About section |
 | `cards.js` | The artifact cards, as data |
 | `script.js` | Turns the card data into HTML |
-| `style.css` | Styles |
+| `waves.js` | Draws the moving sine waves in the header |
+| `style.css` | Styles: dark green theme, graph-paper background |
 | `NOTES.md` | Build log: what I asked the AI for, what I decided, what I dropped |
 
 ## Run it locally

@@ -13,10 +13,11 @@ Live: https://cm0407.github.io/Software-Projects/ · Repo: https://github.com/cm
 
 ## Structure
 
-- `index.html` — page layout, About section, empty `#card-grid`
+- `index.html` — header (terminal prompt, name, Euler's-method equation, `<canvas id="waves">`), About section, empty `#card-grid`; loads Inter and JetBrains Mono from Google Fonts
 - `cards.js` — the `artifacts` array; **the only file edited when an artifact is finished**
 - `script.js` — loops over `artifacts` and builds one `<article class="card {status}">` each
-- `style.css` — colors as CSS variables in `:root`; `.card.idea` gets a dashed border
+- `waves.js` — animates sine waves on the header canvas; draws once and stops if the visitor prefers reduced motion
+- `style.css` — dark green theme; colors and fonts as CSS variables in `:root`; graph-paper grid is layered gradients on `body`; `.card.idea` gets a dashed border, `.card.done` a solid green badge
 - `NOTES.md` — build log (required by the course)
 
 `cards.js` must load before `script.js`, since script.js reads the global `artifacts`.

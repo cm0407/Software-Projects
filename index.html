@@ -4,29 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Collins Mbugua | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Collins Mbugua</h1>
-      <p class="tagline">Mathematics + Computer Science · UW Tacoma</p>
+    <header class="hero">
+      <canvas id="waves" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="prompt">
+          <span class="prompt-path">~/portfolio</span> $ whoami
+        </p>
+        <h1>
+          <span class="name">Collins Mbugua</span
+          ><span class="cursor" aria-hidden="true">_</span>
+        </h1>
+        <p class="tagline">Mathematics + Computer Science · UW Tacoma</p>
+        <p class="equation" aria-hidden="true">
+          <span class="eq-label">euler's method</span>
+          <span class="eq-math"
+            >y<sub>n+1</sub> = y<sub>n</sub> + h · f(t<sub>n</sub>,
+            y<sub>n</sub>)</span
+          >
+        </p>
+      </div>
     </header>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <p>
-          I’m Collins, a senior double-majoring in Mathematics and Computer
-          Science at UW Tacoma, where I also work as a tutor and course
-          facilitator; this past summer I did research on numerical methods for
-          differential equations at SLMath in Berkeley. I want to get better at
-          building well-designed software, especially software architecture and
-          design, while sharpening my algorithmic thinking. I’m currently
-          working on an investment platform that I hope to grow into a full
-          website and mobile app. Outside of class, I play guitar and love
-          reading about world history, Christian theology, and Middle East
-          affairs.
-        </p>
+        <div class="panel">
+          <p>
+            I’m Collins, a senior double-majoring in Mathematics and Computer
+            Science at UW Tacoma, where I also work as a tutor and course
+            facilitator; this past summer I did research on numerical methods
+            for differential equations at SLMath in Berkeley. I want to get
+            better at building well-designed software, especially software
+            architecture and design, while sharpening my algorithmic thinking.
+            I’m currently working on an investment platform that I hope to grow
+            into a full website and mobile app. Outside of class, I play guitar
+            and love reading about world history, Christian theology, and Middle
+            East affairs.
+          </p>
+        </div>
       </section>
 
       <section id="artifacts">
@@ -36,10 +60,14 @@
     </main>
 
     <footer>
-      <p>Built for TCSS 490 · Autumn 2026</p>
+      <p>
+        Built for TCSS 490 · Autumn 2026
+        <span class="qed" title="Q.E.D.">∎</span>
+      </p>
     </footer>
 
     <script src="cards.js"></script>
     <script src="script.js"></script>
+    <script src="waves.js"></script>
   </body>
 </html>
