@@ -3,7 +3,7 @@ const artifacts = [
     number: 1,
     status: "done",
     title: "This portfolio site",
-    link: "https://github.com/cm0407/Software-Projects", // fill in after deploying (Step 7)
+    link: "https://github.com/cm0407/Software-Projects",
     body: " Building this portfolio was exciting. I tried to do it without having claude make the folder and files for me, I did use html and css templates from the web, but I tried to make it my own. I learned a lot about html, css, and javascript while making this site, and I hope to continue improving it in the future.",
   },
   {
@@ -22,7 +22,7 @@ const artifacts = [
   },
   {
     number: 4,
-    status: "",
+    status: "idea",
     title: " REU's, Internship opportunities for undergraduates Resource Site",
     link: "",
     body: "A site that compiles a list of REU's and internship opportunities for undergraduates, with the option to filter by field, location, and other criteria. The site would also include resources for applying to these opportunities, such as tips for writing a strong application and advice from past participants.",
