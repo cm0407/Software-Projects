@@ -79,6 +79,8 @@ Live site: https://cm0407.github.io/Software-Projects/
   - `//` before section headings, cards that lift and glow on hover, a solid green badge on finished cards, and ∎ (end of proof) in the footer.
 - Kept my About text and card text word for word. Only the design changed.
 - Added `waves.js` to the file lists in `README.md` and `CLAUDE.md`.
+- Grew the Group Shuffle idea into a **Facilitator Assistant**, a web app for my facilitator role that shuffles students into groups, takes attendance, and sends emails. It becomes Artifact 2, and the Investment platform moves to Artifact 3.
+- Each artifact gets its own folder in `TCSS_490` and its own GitHub repo, instead of a subfolder in `Portfolio`. The portfolio card links to it when it's done.
 
 **Abandoned:**
 

@@ -9,16 +9,16 @@ const artifacts = [
   {
     number: 2,
     status: "idea",
-    title: "Investment platform",
+    title: "Facilitator Assistant",
     link: "",
-    body: "I wish investment information was as easily accessible as social media is, I hope to build a software that can not only educate but also help with investment decisions utilizing AI for market data and recommendation",
+    body: "A web app that helps me in my facilitator role at school. It shuffles students into groups, takes attendance, and sends out emails, basically a personal assistant.",
   },
   {
     number: 3,
     status: "idea",
-    title: "Group Shuffle",
+    title: "Investment platform",
     link: "",
-    body: "An interactive web app that allows users to create groups and shuffle them randomly, with the option to set constraints (e.g. certain people cannot be in the same group).",
+    body: "I wish investment information was as easily accessible as social media is, I hope to build a software that can not only educate but also help with investment decisions utilizing AI for market data and recommendation",
   },
   {
     number: 4,
