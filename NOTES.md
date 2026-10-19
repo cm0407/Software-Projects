@@ -11,6 +11,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Session 1: Claude web chat (claude.ai)
 - Session 2: Claude Code (VS Code extension)
 - Session 3: Claude Code
+- Session 4: Claude Code
 
 ## Session 1: Oct 11
 
@@ -95,9 +96,31 @@ Live site: https://cm0407.github.io/Software-Projects/
 - A new file is "untracked" until `git add` includes it. `git add .` adds every change in the folder, so run `git status` first to see what that includes.
 - Animation on a canvas is a flipbook: about 60 times a second the code erases the canvas and redraws the waves a little further along in time.
 
+## Session 4: Oct 18
+
+**Asked Claude Code for:**
+
+1. To fill in the Artifact 2 card for the final submission of Artifact 2 (Something You Will Use): a link to what I built and a short reflection on how it went and what I learned.
+
+**Decided:**
+
+- Marked the Artifact 2 card `"done"`, so it gets the solid green "Complete" badge instead of the dashed "Idea" border.
+- Pointed its link at the live app, https://cm0407.github.io/Facitant/, so visitors can try it. Claude Code checked that the page loads before I linked it. The build log for Facitant lives in its own repo, https://github.com/cm0407/Facitant.
+- Kept the title "Facilitator Assistant."
+- Replaced the idea text with my reflection, which I wrote myself.
+
+**Abandoned:**
+
+- The idea text for Artifact 2 ("shuffles students into groups, takes attendance, and sends out emails"). Version 1 does the group shuffle and seating chart; attendance and emails are still planned.
+
+**Takeaways:**
+
+- **[YOUR TURN: anything you noticed while submitting, e.g. how filling in a card works now that the site is data-driven]**
+
 ## Next steps
 
 - [ ] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
 - [x] Set the Artifact 4 card's `status` to `"idea"` (it's empty, so it doesn't get the dashed border)
 - [ ] Confirm the live link is submitted on Canvas
 - [ ] Decide whether to keep Euler's method in the header or swap in another equation
+- [ ] Write the Artifact 2 reflection in `cards.js` (it currently says [YOUR TURN]), then push and submit the site link on Canvas

@@ -8,10 +8,10 @@ const artifacts = [
   },
   {
     number: 2,
-    status: "idea",
+    status: "done",
     title: "Facilitator Assistant",
-    link: "",
-    body: "A web app that helps me in my facilitator role at school. It shuffles students into groups, takes attendance, and sends out emails, basically a personal assistant.",
+    link: "https://cm0407.github.io/Facitant/",
+    body: "[Building a facilitator assistant for my Discrete Math 2 credit workshop course was taking was a great experience. I learned a lot about how to use javascript to create a web application, and I also learned about how to use APIs to get data from the web. The project was a great opportunity to learn about web development,how html, css and javascript work together, and I hope to continue improving it in the future.]",
   },
   {
     number: 3,
