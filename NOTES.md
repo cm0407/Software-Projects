@@ -12,6 +12,8 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Session 2: Claude Code (VS Code extension)
 - Session 3: Claude Code
 - Session 4: Claude Code
+- Session 5: Claude Code
+- Session 6: Claude Code
 
 ## Session 1: Oct 11
 
@@ -117,9 +119,36 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 - **[YOUR TURN: anything you noticed while submitting, e.g. how filling in a card works now that the site is data-driven]**
 
+## Session 5: Oct 23
+
+**Asked Claude Code for:**
+
+1. Whether my AI Journal was in a GitHub repo anywhere. It wasn't: it only lived in the `TCSS_490` folder on OneDrive.
+2. To add it to this repo.
+
+**Decided:**
+
+- Moved `AI_Journal.md` into this folder instead of copying it, so there's only one copy to update each Sunday and the GitHub version never goes out of date.
+- Added it to the file lists in `README.md` and `CLAUDE.md`.
+
+## Session 6: Oct 25
+
+**Asked Claude Code for:**
+
+1. To fill in the Artifact 5 idea: a personal tutoring business with web services, customer integration, and appointment setting, covering middle school math through Calculus 4, Linear Algebra, Discrete Math, Real Analysis, Mathematical Proofs, Differential Equations, Abstract Algebra, and Probability and Statistics. The body should describe my passion for helping people with math, especially in my Kenyan community, and the idea of growing it into a larger tutoring franchise.
+
+**Decided:**
+
+- Titled the card "Personal Tutoring Business" and kept its `status` as `"idea"`.
+- Built the card text from my own wording in the request, with only light cleanup, since the ideas need to be in my own words.
+
+**Abandoned:**
+
+- The "NO IDEA YET" placeholder for Artifact 5.
+
 ## Next steps
 
-- [ ] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
+- [x] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
 - [x] Set the Artifact 4 card's `status` to `"idea"` (it's empty, so it doesn't get the dashed border)
 - [ ] Confirm the live link is submitted on Canvas
 - [ ] Decide whether to keep Euler's method in the header or swap in another equation

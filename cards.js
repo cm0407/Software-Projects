@@ -15,7 +15,7 @@ const artifacts = [
   },
   {
     number: 3,
-    status: "idea",
+    status: "idea", 
     title: "Investment platform",
     link: "",
     body: "I wish investment information was as easily accessible as social media is, I hope to build a software that can not only educate but also help with investment decisions utilizing AI for market data and recommendation",
@@ -30,8 +30,8 @@ const artifacts = [
   {
     number: 5,
     status: "idea",
-    title: "Artifact 5",
+    title: "Personal Tutoring Business",
     link: "",
-    body: "NO IDEA YET",
+    body: "I have a passion for helping people do math, especially in my Kenyan community, where it's a need I have seen. A web app with web services that makes it easy for parents to book me, with customer integration and appointment setting. Subjects from middle school math to Calculus 4, Linear Algebra, Discrete Math, Real Analysis, Mathematical Proofs, Differential Equations, Abstract Algebra, and Probability and Statistics. Maybe one day it grows into a larger tutoring franchise!",
   },
 ];
