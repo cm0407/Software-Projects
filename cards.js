@@ -15,10 +15,10 @@ const artifacts = [
   },
   {
     number: 3,
-    status: "idea", 
+    status: "done",
     title: "Investment platform",
-    link: "",
-    body: "I wish investment information was as easily accessible as social media is, I hope to build a software that can not only educate but also help with investment decisions utilizing AI for market data and recommendation",
+    link: "https://cm0407.github.io/AI-Investment-Project/",
+    body: "Before this, all the screening and scoring in my investment research system was done by python scripts, everything deterministic. We made the model a judge of the stocks my scripts had already screened and scored. My rubric is 100 points; about half of it a computer can calculate straight from SEC filings — growth, valuation, debt, cash flow. The other half is judgement — is this a good business, does it have a moat, what could go wrong. That half I had been filling in by hand, so that is where the model went. The rule we set is that it never touches a number, and my code throws the whole answer out if any of seven checks fail. Where AI really helped me understand something was the backtest. Against 14 judgments I had written by hand, almost the whole gap was one pillar, catalysts. The model kept scoring it low because my evidence comes from SEC filings and catalysts are news. So the problem was my evidence, not the model. Where it let me skip understanding is the frontend and the deployment. The site is Next.js and MUI and I did not write that code.",
   },
   {
     number: 4,

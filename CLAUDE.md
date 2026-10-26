@@ -19,6 +19,7 @@ Live: https://cm0407.github.io/Software-Projects/ · Repo: https://github.com/cm
 - `waves.js` — animates sine waves on the header canvas; draws once and stops if the visitor prefers reduced motion
 - `style.css` — dark green theme; colors and fonts as CSS variables in `:root`; graph-paper grid is layered gradients on `body`; `.card.idea` gets a dashed border, `.card.done` a solid green badge
 - `NOTES.md` — build log (required by the course)
+- `AI_Journal.md` — Collins's weekly AI usage journal for the course, updated every Sunday; Collins's own words, so don't write entries (see "Don't write personal content")
 
 `cards.js` must load before `script.js`, since script.js reads the global `artifacts`.
 

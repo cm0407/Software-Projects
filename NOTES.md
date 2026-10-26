@@ -14,6 +14,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Session 4: Claude Code
 - Session 5: Claude Code
 - Session 6: Claude Code
+- Session 7: Claude Code
 
 ## Session 1: Oct 11
 
@@ -145,6 +146,23 @@ Live site: https://cm0407.github.io/Software-Projects/
 **Abandoned:**
 
 - The "NO IDEA YET" placeholder for Artifact 5.
+
+## Session 7: Oct 26
+
+**Asked Claude Code for:**
+
+1. To fill in the Artifact 3 card: link it to https://cm0407.github.io/AI-Investment-Project/ and turn my weekly write-up into a 100–200 word reflection on what I learned.
+
+**Decided:**
+
+- Marked the Artifact 3 card `"done"` and pointed its link at the live site. Claude Code checked that the page loads before I linked it.
+- Kept the title "Investment platform."
+- Cut my write-up down to 194 words using my own sentences: the model as a judge for the half of my rubric that needs judgement, the seven checks, the catalysts gap the backtest found, and that I didn't write the frontend.
+
+**Abandoned:**
+
+- The Artifact 3 idea text ("I wish investment information was as easily accessible as social media is...").
+- Parts of my write-up that didn't fit in 200 words: the 3.4-point backtest gap, planning before building this time, and Claude catching two bugs I would have missed.
 
 ## Next steps
 

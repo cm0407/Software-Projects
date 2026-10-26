@@ -18,6 +18,7 @@ Plain HTML, CSS, and JavaScript. No framework, build step, or server. Hosted on 
 | `waves.js` | Draws the moving sine waves in the header |
 | `style.css` | Styles: dark green theme, graph-paper background |
 | `NOTES.md` | Build log: what I asked the AI for, what I decided, what I dropped |
+| `AI_Journal.md` | Weekly journal of how I used AI in TCSS 490 |
 
 ## Run it locally
 
