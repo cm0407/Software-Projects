@@ -152,17 +152,20 @@ Live site: https://cm0407.github.io/Software-Projects/
 **Asked Claude Code for:**
 
 1. To fill in the Artifact 3 card: link it to https://cm0407.github.io/AI-Investment-Project/ and turn my weekly write-up into a 100–200 word reflection on what I learned.
+2. To make that reflection shorter, "short and sweet" like Artifacts 1 and 2, and to remove the leftover `[ ]` around the Artifact 2 reflection.
 
 **Decided:**
 
 - Marked the Artifact 3 card `"done"` and pointed its link at the live site. Claude Code checked that the page loads before I linked it.
 - Kept the title "Investment platform."
-- Cut my write-up down to 194 words using my own sentences: the model as a judge for the half of my rubric that needs judgement, the seven checks, the catalysts gap the backtest found, and that I didn't write the frontend.
+- Cut my write-up down to about 85 words using my own sentences, to match the length of the Artifact 1 and 2 cards: the model as a judge for the half of my rubric that needs judgement, and the catalysts gap the backtest found.
+- Removed the `[ ]` left over from the placeholder around the Artifact 2 reflection. They were showing on the live site.
 
 **Abandoned:**
 
 - The Artifact 3 idea text ("I wish investment information was as easily accessible as social media is...").
-- Parts of my write-up that didn't fit in 200 words: the 3.4-point backtest gap, planning before building this time, and Claude catching two bugs I would have missed.
+- A first, 194-word version of the reflection. It was too long next to the other cards.
+- Parts of my write-up that didn't make the short version: the 100-point rubric breakdown, the seven checks, the 14 hand-written judgments and 3.4-point gap, planning before building this time, not writing the Next.js/MUI frontend, and Claude catching two bugs I would have missed.
 
 ## Next steps
 

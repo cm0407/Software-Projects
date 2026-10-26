@@ -11,14 +11,14 @@ const artifacts = [
     status: "done",
     title: "Facilitator Assistant",
     link: "https://cm0407.github.io/Facitant/",
-    body: "[Building a facilitator assistant for my Discrete Math 2 credit workshop course was taking was a great experience. I learned a lot about how to use javascript to create a web application, and I also learned about how to use APIs to get data from the web. The project was a great opportunity to learn about web development,how html, css and javascript work together, and I hope to continue improving it in the future.]",
+    body: "Building a facilitator assistant for my Discrete Math 2 credit workshop course was taking was a great experience. I learned a lot about how to use javascript to create a web application, and I also learned about how to use APIs to get data from the web. The project was a great opportunity to learn about web development,how html, css and javascript work together, and I hope to continue improving it in the future.",
   },
   {
     number: 3,
     status: "done",
     title: "Investment platform",
     link: "https://cm0407.github.io/AI-Investment-Project/",
-    body: "Before this, all the screening and scoring in my investment research system was done by python scripts, everything deterministic. We made the model a judge of the stocks my scripts had already screened and scored. My rubric is 100 points; about half of it a computer can calculate straight from SEC filings — growth, valuation, debt, cash flow. The other half is judgement — is this a good business, does it have a moat, what could go wrong. That half I had been filling in by hand, so that is where the model went. The rule we set is that it never touches a number, and my code throws the whole answer out if any of seven checks fail. Where AI really helped me understand something was the backtest. Against 14 judgments I had written by hand, almost the whole gap was one pillar, catalysts. The model kept scoring it low because my evidence comes from SEC filings and catalysts are news. So the problem was my evidence, not the model. Where it let me skip understanding is the frontend and the deployment. The site is Next.js and MUI and I did not write that code.",
+    body: "Before this, all the screening and scoring in my investment research system was done by python scripts. We made the model a judge for the judgement half of my rubric — is this a good business, does it have a moat, what could go wrong — and it never touches a number. Where AI really helped me understand something was the backtest. The model kept scoring catalysts low because my evidence comes from SEC filings and catalysts are news. So the problem was my evidence, not the model.",
   },
   {
     number: 4,
