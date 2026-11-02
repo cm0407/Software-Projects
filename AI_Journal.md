@@ -52,9 +52,6 @@ I asked Claude webchat for a step by step guide to build and deploy my portfolio
 
 I learned that I need to be more specific about what I want, because even after I gave Claude the assignment it didn't ask me what I wanted on my webpage. I also noticed that Claude Code makes fewer mistakes than Claude on the web for tasks that depend on my system, since it can see my computer and my files, so I switched to Claude Code for building my portfolio.
 
-### Notes
-
-My Learning Log reflection for this week goes into the python3 bug in more detail. Build log: Sessions 1 and 2 in `Portfolio/NOTES.md`. Live site: https://cm0407.github.io/Software-Projects/
 
 ---
 
@@ -78,11 +75,43 @@ When I asked Claude Code to work on my portfolio, its first summary of what was 
 
 I started asking Claude Code to teach me as we go instead of just doing things for me. I made some of the changes myself, like fixing the status on my Artifact 4 card, and I ran the git commands to commit and push on my own, then had Claude Code check my work with `git diff`.
 
-### Notes
 
-Build log: Session 3 in `Portfolio/NOTES.md`. This week I also turned my Group Shuffle idea into the Facilitator Assistant, which is now Artifact 2, and swapped it with the Investment platform, which is now Artifact 3.
 
----
+## Week 3 (Oct  19 – Oct 25)
+
+### What AI tools did you use this week?
+
+This week I used Claude webchat and Claude Code (the VS Code extension).
+
+**[YOUR TURN: add any other AI tool you used for this course this week, like ChatGPT, then delete this note.]**
+
+### Describe a task where AI was helpful
+This week I used AI to improve my facilitator assistant app, I also used AI to help me edit and review a grant application I was writing for Grad school. 
+### Describe a time AI got it wrong or you had to correct it
+There was not a time AI got anything right as I was using it
+
+### How is your approach to using AI evolving?
+My AI usage has stayed mostly the same this week. I am however using more project based chat AI, that is I am creating a project on claude app and uploading a bunch of context files which in turn helps the AI get exactly what I require in it's responses to me.
+
+## Week 4 (Oct  26 – Nov 1)
+
+### What AI tools did you use this week?
+
+This week I used Claude webchat and Claude Code (the VS Code extension).
+
+**[YOUR TURN: add any other AI tool you used for this course this week, like ChatGPT, then delete this note.]**
+
+### Describe a task where AI was helpful
+
+This week I used AI to not only prep and study for my coding theory course midterm, help me correct my Calculus homework and also to star building an App that can be used as a helpful tool for students learning how to drive.
+
+
+### Describe a time AI got it wrong or you had to correct it
+AI did not get anything wrong this week, for my coding theory class it gave me methods we hadn't studied in class which were outside of the class's scope.
+
+### How is your approach to using AI evolving?
+My approach to using AI is evolving in that I am integrating AI to many more tasks in my daily life such as sending emails, writing tex code for student worksheet's and general knowledge acquisition.
+ 
 
 ## End-of-quarter write-up
 
