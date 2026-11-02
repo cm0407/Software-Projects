@@ -32,6 +32,16 @@ happened? If not, add the detail they'd ask about.
 
 ---
 
+## AI Journal Proposal
+
+My plan for keeping this journal is to take notes at the end of every AI session instead of trying to remember everything at the end of the week. Whenever I finish using AI, whether that is Claude Code helping me build one of my artifacts or Claude webchat helping me study for a class, I will write down a few quick notes on what I was working on, what I asked the AI, what it gave back and how it helped me. If it got something wrong or I had to correct it, I will write down exactly what it said and how I figured out it was wrong, since those are the details I forget the fastest.
+
+At the end of each week on Sunday, I will go through all of my session notes from that week and compile them into my weekly log. Since the notes will already have the specific tasks, commands and mistakes, I can use them to answer each of the four questions with real examples instead of general sentences. I will also read my last few entries before writing so I can see how my approach to using AI is changing from week to week.
+
+Looking back, my Week 3 and Week 4 entries are a lot shorter and less specific than my first two weeks, and taking notes the same day should fix that because details fade after a few days. I already keep a session log in NOTES.md after every Claude Code session on my portfolio, so this is the same idea applied to every time I use AI, not just my coding projects. By the end of the quarter I will have a full record of how I used AI, which will also make my end-of-quarter write-up much easier to write.
+
+---
+
 ## Week 1 (Oct 5 – Oct 11)
 
 ### What AI tools did you use this week?

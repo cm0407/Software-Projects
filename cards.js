@@ -18,7 +18,7 @@ const artifacts = [
     status: "done",
     title: "Investment platform",
     link: "https://cm0407.github.io/AI-Investment-Project/",
-    body: "Before this, all the screening and scoring in my investment research system was done by python scripts. We made the model a judge for the judgement half of my rubric — is this a good business, does it have a moat, what could go wrong — and it never touches a number. Where AI really helped me understand something was the backtest. The model kept scoring catalysts low because my evidence comes from SEC filings and catalysts are news. So the problem was my evidence, not the model.",
+    body: "This build was an update to a project I had been working on. Before this, all the screening and scoring in my investment research system was done by python scripts. We made the model a judge for the judgement half of my rubric; is this a good business, does it have a moat, what could go wrong, and it never touches a number. Where AI really helped me understand something was the backtest. The model kept scoring catalysts low because my evidence comes from SEC filings and catalysts are news. So the problem was my evidence, not the model.",
   },
   {
     number: 4,

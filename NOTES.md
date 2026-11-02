@@ -15,6 +15,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Session 5: Claude Code
 - Session 6: Claude Code
 - Session 7: Claude Code
+- Session 8: Claude Code
 
 ## Session 1: Oct 11
 
@@ -118,7 +119,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 **Takeaways:**
 
-- **[YOUR TURN: anything you noticed while submitting, e.g. how filling in a card works now that the site is data-driven]**
+- This step was quite straight forward.
 
 ## Session 5: Oct 23
 
@@ -166,6 +167,27 @@ Live site: https://cm0407.github.io/Software-Projects/
 - The Artifact 3 idea text ("I wish investment information was as easily accessible as social media is...").
 - A first, 194-word version of the reflection. It was too long next to the other cards.
 - Parts of my write-up that didn't make the short version: the 100-point rubric breakdown, the seven checks, the 14 hand-written judgments and 3.4-point gap, planning before building this time, not writing the Next.js/MUI frontend, and Claude catching two bugs I would have missed.
+
+## Session 8: Nov 1
+
+**Asked Claude Code for:**
+
+1. To pull the latest changes from GitHub. The remote had one new commit, "Week 4 AI usage," which only changed `AI_Journal.md`.
+2. To add an "AI Journal Proposal" to `AI_Journal.md`: 2–3 paragraphs in my tone on how I'll keep the journal. My plan: at the end of each AI session, write down what I did and how AI helped, then at the end of the week compile those notes into the weekly entry.
+
+**Decided:**
+
+- Ran `git fetch` first to see what was coming, then `git pull --ff-only`, since the incoming commit didn't touch my uncommitted files.
+- Restored Sessions 5–7 in this log. They had been deleted from my working copy, most likely by saving an older copy of `NOTES.md` that was still open in my editor. Kept the Session 4 takeaway I wrote in that save.
+- Claude Code drafted the proposal from my plan because I asked it to write in my tone, even though journal entries are normally written by me. I'll reread it and change anything that doesn't sound like me.
+- Put the proposal at the top of the journal, above Week 1, since it describes how every weekly entry gets written.
+- Left my uncommitted Artifact 3 reflection edit in `cards.js` as it was.
+
+**Takeaways:**
+
+- `git fetch` downloads new commits without changing my files, and `git log HEAD..origin/main` lists what a pull would bring in.
+- `git pull` only stops for uncommitted changes when an incoming commit edits one of the same files.
+- If a file changes on disk while an older copy is open in my editor, saving the editor's copy overwrites the newer version. Running `git diff` before committing catches it.
 
 ## Next steps
 
