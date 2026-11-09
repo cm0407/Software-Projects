@@ -123,6 +123,41 @@ AI did not get anything wrong this week, for my coding theory class it gave me m
 My approach to using AI is evolving in that I am integrating AI to many more tasks in my daily life such as sending emails, writing tex code for student worksheet's and general knowledge acquisition.
  
 
+---
+
+## Week 5 (Nov 2 – Nov 8)
+
+### What AI tools did you use this week?
+
+This week I mainly used Claude Code. I used it to plan SuperDrive, an interactive driver's ed learning app I'm building for 490 with my teammate from class, Abdulrahman. I also kept using AI to study for my math classes.
+
+### Describe a task where AI was helpful
+
+Claude Code was really helpful on Nov 3 when we sat down to plan SuperDrive before writing any code. The idea is a Khan Academy style app where young people learn Washington driving laws and the WA Driver Guide through short lessons, "check your understanding" questions, scenario puzzles (right-of-way, four-way stops, school zones) and a timed practice knowledge test. Claude Code helped us make the important decisions up front:
+
+- **Tech stack:** Next.js with React and TypeScript for the frontend, and Supabase (Postgres) for the backend and database.
+- **Authentication:** Supabase Auth instead of Clerk, so everything stays with one vendor and the database's security rules can use the logged in user's ID directly. For V1 guests get an anonymous sign-in, which means they're real users from the start, so when we add Google sign-in in V2 their progress stays attached to the same account.
+- **Database:** the lesson content lives in Supabase tables instead of plain files. Files would have been faster to start with, but we need statuses for a review workflow, and a database also makes it easy to pull 40 random questions for the practice test.
+- **Checking the content:** driving laws have to be right, so every lesson and question gets reviewed by AI against the official WA Driver Guide before anyone sees it. The AI has to give an exact quote and page number, our code checks that the quote actually exists in the guide, and a human approves it before it's published. Having AI check content every time a page loads sounded safe at first, but it would show users text nobody verified and make answers change between visits, so reviewing once before publishing was the better call.
+- **Saving progress:** Supabase is the source of truth, and localStorage only holds saves that failed until they go through.
+- **Working as a team:** both of us run Supabase locally with Docker so we don't mess up each other's data, one branch per feature, and we split the work feature by feature so we both learn the whole stack.
+
+We also planned a "report a problem" button on every page that sends an email and opens a GitHub issue, with a rate limit so the inbox doesn't get flooded. By the end we had a CLAUDE.md handoff doc and a build log in the repo with every decision and the reason behind it, so either of us (or an AI agent) can pick up where we left off. I learned some new things too, like RLS (Row Level Security), which is basically a per-row bouncer in the database, and that a hash is like a fingerprint for content that changes if you edit even one character.
+
+### Describe a time AI got it wrong or you had to correct it
+
+AI didn't get anything wrong this week. The closest call was the practice test facts. The WA knowledge test is 40 questions and you need 80% (32 out of 40) to pass, and that got checked against a DOL score sheet and DOL-approved driving schools before it went into our planning doc. The time limit was different though: some sources said 35 minutes and others said 45, so instead of trusting one number we made the timer a setting we can change later. That's also the reason we built the AI review step with real quotes and a human approval. The whole app is about teaching the law correctly, so we can't just take AI's word for it.
+
+### How is your approach to using AI evolving?
+
+The biggest change is that I'm using AI earlier in a project. In the first weeks I mostly used it to fix problems as they came up, like the `python3` command that didn't work on my Windows laptop, but this week we used it to plan a whole app before writing a single line of code. It got us thinking about things I wouldn't have thought of on my own, like spam protection on problem reports and what happens to a guest's progress if they clear their browser.
+
+I'm also continuing to use AI to study for my math classes, not just for coding. Last week it helped me prep for my coding theory midterm and correct my Calculus homework, and I'm still using it like a tutor that's there whenever I need it. I ask it to explain a concept step by step in plain words, the same way I ask Claude Code to explain things "as if you are teaching me," and to walk through example problems so I can see how each step connects to the next. Since it gave me coding theory methods last week that were outside the scope of my class, it helps to tell it what we've actually covered. I also don't take its math as automatically right, since one time it put wrong entries in a DP table when I asked it to work out the knapsack problem, so I try to follow along and double check its steps instead of just copying the answer.
+
+### Notes
+
+Next up for SuperDrive: create the GitHub repo, decide who builds which features, set up the Next.js + Supabase project, and agree on the database schema together before we start working in parallel.
+
 ## End-of-quarter write-up
 
 <!--
