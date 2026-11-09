@@ -16,6 +16,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Session 6: Claude Code
 - Session 7: Claude Code
 - Session 8: Claude Code
+- Session 9: Claude Code
 
 ## Session 1: Oct 11
 
@@ -188,6 +189,24 @@ Live site: https://cm0407.github.io/Software-Projects/
 - `git fetch` downloads new commits without changing my files, and `git log HEAD..origin/main` lists what a pull would bring in.
 - `git pull` only stops for uncommitted changes when an incoming commit edits one of the same files.
 - If a file changes on disk while an older copy is open in my editor, saving the editor's copy overwrites the newer version. Running `git diff` before committing catches it.
+
+## Session 9: Nov 8
+
+**Asked Claude Code for:**
+
+1. To replace the Artifact 4 card with SuperDriver, a driver's ed learning app for young people that I'm building with Abdulrahman Elmi, rewritten from our project description into my tone.
+2. To commit and push the change without the Claude co-author line on the commit.
+
+**Decided:**
+
+- Titled the card "SuperDriver" and kept its `status` as `"idea"` with no link, since V1 isn't built yet.
+- Claude Code reworded our project description in my tone because I asked it to. I'll reread it and change anything that doesn't sound like me.
+- Kept the parts a visitor cares about: what you learn, the lesson types, the Khan Academy feel, V1 (Washington only, no sign-in, 2 days) and V2 (state picker, Google sign-in, mini driving simulation), and that we're splitting the work feature by feature with AI's help.
+- Left out the lines that were instructions for the AI building the app, like "build original visuals only" and "do not copy Khan Academy branding."
+
+**Abandoned:**
+
+- The Artifact 4 idea for a REU and internship resource site.
 
 ## Next steps
 

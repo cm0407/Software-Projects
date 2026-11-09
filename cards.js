@@ -23,9 +23,9 @@ const artifacts = [
   {
     number: 4,
     status: "idea",
-    title: " REU's, Internship opportunities for undergraduates Resource Site",
+    title: "SuperDriver",
     link: "",
-    body: "A site that compiles a list of REU's and internship opportunities for undergraduates, with the option to filter by field, location, and other criteria. The site would also include resources for applying to these opportunities, such as tips for writing a strong application and advice from past participants.",
+    body: "SuperDriver is a helpful tool for young people learning how to drive, and I'm building it with my teammate Abdulrahman Elmi. You learn Washington State driving laws and the Driver Guide through short lessons, quick checks, scenario puzzles, and a timed practice knowledge test. I want it to feel clean and friendly like Khan Academy, where you can see your progress as you master each topic. The first version is Washington only with no sign-in, and we're aiming to finish it in 2 days. After that we want to add a state picker, Google sign-in, and a mini driving simulation. We're using AI to help us build it and splitting the work feature by feature.",
   },
   {
     number: 5,
