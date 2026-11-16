@@ -219,6 +219,8 @@ Live site: https://cm0407.github.io/Software-Projects/
 **Asked Claude Code for:**
 
 1. To fill in the Artifact 5 card with the live site, https://frontend-pink-eight-29.vercel.app/, and a reflection of 6 sentences or less, summarized in my tone from our brainstorm summary (`artifact #5 progress.txt`). The main thing I learned: how to research software that already exists and see what we can build that doesn't.
+2. To commit and push it, with no Claude co-author line on any commit from now on.
+3. To replace the Artifact 4 project description with a short reflection, combining two of my weekly AI journal write-ups: planning SuperDriver with Abdulrahman, and the Jest crash while testing my lessons.
 
 **Decided:**
 
@@ -226,11 +228,15 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Claude Code checked that the live site loads. It's a JavaScript app, so the page text only shows up once the browser runs it. Claude Code searched the app's code to confirm the three features the card mentions (offline kiosk check-in, voice logging, routine-change alerts) are on the site before naming them.
 - Claude Code wrote the reflection in my tone from the brainstorm summary because I asked it to. I'll reread it and change anything that doesn't sound like me.
 - Kept: where the idea came from, researching Procare, Brightwheel, and StoriiCare to find the gap (small programs still on paper), the three features, the voice-vs-offline tradeoff, and the operator interviews as next steps.
+- Committed and pushed the Artifact 4 and 5 cards with only my name on the commit. Claude Code saved this as a standing preference.
+- Artifact 4's card now has a reflection instead of the project description, as I planned in Session 9. It's 5 sentences in my own wording from the journal: planning with a teammate before coding, my part (9 lessons and 159 questions, one agent writing and one fact-checking), and the crash the AI caused by running a production build over my dev server's `.next` folder.
 
 **Abandoned:**
 
 - The Personal Tutoring Business idea for Artifact 5.
 - Parts of the brainstorm that didn't fit in 6 sentences: the Procare stat that 44% of programs without software still use paper, audio privacy, alerts as observations instead of diagnoses, the org-type architecture decision, and the 3-phase roadmap.
+- The Artifact 4 project description (4 lessons, 17 skill checks, the Khan Academy feel, V2 plans).
+- Parts of the journal that didn't fit: the Supabase guest-progress and Google sign-in plan, Docker, how Claude found the problem (my dev server running since Nov 11, its own test server still running after it said it stopped it), and using AI to study for my math classes.
 
 ## Next steps
 
