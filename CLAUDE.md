@@ -25,7 +25,7 @@ Live: https://cm0407.github.io/Software-Projects/ · Repo: https://github.com/cm
 
 ## Card fields
 
-`number`, `status` (`"done"` or `"idea"`, which sets the badge and the dashed border), `title`, `link` (empty string shows "Link coming soon"), `body` (reflection when done, ideas when not). Strings are double-quoted, so a stray `"` inside `body` breaks the whole page. The card text is inserted with `innerHTML`, which is fine because it's Collins's own data only.
+`number`, `status` (`"done"`, `"in-progress"`, or `"idea"`, which sets the badge and border: solid green, teal, or dashed), `week` (only for `"in-progress"`, shown on the badge; Artifact 5 needs an updated card each week of the five), `title`, `link` (empty string shows "Link coming soon"), `body` (reflection when done, ideas when not). Strings are double-quoted, so a stray `"` inside `body` breaks the whole page. The card text is inserted with `innerHTML`, which is fine because it's Collins's own data only.
 
 ## Run and deploy
 

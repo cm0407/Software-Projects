@@ -222,6 +222,10 @@ h2::after {
   border-style: dashed;
 }
 
+.card.in-progress {
+  border-color: rgba(45, 212, 191, 0.45);
+}
+
 .card .badge {
   align-self: flex-start;
   margin: 0;
@@ -239,6 +243,11 @@ h2::after {
   color: #022c1a;
   background: var(--accent);
   border-color: var(--accent);
+}
+
+.card.in-progress .badge {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
 }
 
 .card h3 {
