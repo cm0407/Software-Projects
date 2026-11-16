@@ -22,16 +22,16 @@ const artifacts = [
   },
   {
     number: 4,
-    status: "idea",
+    status: "done",
     title: "SuperDriver",
-    link: "",
-    body: "SuperDriver is a helpful tool for young people learning how to drive, and I'm building it with my teammate Abdulrahman Elmi. You learn Washington State driving laws and the Driver Guide through short lessons, quick checks, scenario puzzles, and a timed practice knowledge test. I want it to feel clean and friendly like Khan Academy, where you can see your progress as you master each topic. The first version is Washington only with no sign-in, and we're aiming to finish it in 2 days. After that we want to add a state picker, Google sign-in, and a mini driving simulation. We're using AI to help us build it and splitting the work feature by feature.",
+    link: "https://super-driver-seven.vercel.app/",
+    body: "SuperDriver is a helpful tool for young people learning how to drive, and I built it with my teammate Abdulrahman Elmi. The first version teaches Washington State driving laws from the Driver Guide in 4 short lessons: intersections and right-of-way, signals and road markings, speed and space, and sharing the road. Each lesson has quick skill checks, 17 in total, and if you miss a question you can read the explanation and try again. I wanted it to feel clean and friendly like Khan Academy, so you can see your progress as you master each skill. Next we want to add a state picker, Google sign-in, and a mini driving simulation. We used AI to help us build it and split the work feature by feature.",
   },
   {
     number: 5,
-    status: "idea",
-    title: "Personal Tutoring Business",
-    link: "",
-    body: "I have a passion for helping people do math, especially in my Kenyan community, where it's a need I have seen. A web app with web services that makes it easy for parents to book me, with customer integration and appointment setting. Subjects from middle school math to Calculus 4, Linear Algebra, Discrete Math, Real Analysis, Mathematical Proofs, Differential Equations, Abstract Algebra, and Probability and Statistics. Maybe one day it grows into a larger tutoring franchise!",
+    status: "done",
+    title: "CareForAll",
+    link: "https://frontend-pink-eight-29.vercel.app/",
+    body: "CareForAll is a web app I'm building with my teammate Abdulrahman Elmi to replace the paper logs that childcare, senior care, and disability support programs use for attendance and daily activities. The idea came from seeing childcare operators we know log everything by hand. The biggest thing I learned was how to research software that already exists, like Procare, Brightwheel, and StoriiCare, and see what we can build that doesn't already exist. Check-in and parent messaging are things every app already has, so we focused on smaller programs that still use paper and picked three features to stand out: offline kiosk check-in, hands-free voice logging, and alerts when someone's routine changes. I also learned to think through tradeoffs before writing code, like voice logging needing the internet while the kiosk has to work offline. Next we want to interview the operators we know so their real paper logs shape what we build.",
   },
 ];

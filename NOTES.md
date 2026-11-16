@@ -17,6 +17,7 @@ Live site: https://cm0407.github.io/Software-Projects/
 - Session 7: Claude Code
 - Session 8: Claude Code
 - Session 9: Claude Code
+- Session 10: Claude Code
 
 ## Session 1: Oct 11
 
@@ -196,17 +197,40 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 1. To replace the Artifact 4 card with SuperDriver, a driver's ed learning app for young people that I'm building with Abdulrahman Elmi, rewritten from our project description into my tone.
 2. To commit and push the change without the Claude co-author line on the commit.
+3. To link the card to the SuperDriver repo, https://github.com/abdulrahman1121/super-driver.
+4. To mark the card `"done"` now that V1 is built.
+5. (Nov 9) To point the link at the live app, https://super-driver-seven.vercel.app/, and update the description.
 
 **Decided:**
 
-- Titled the card "SuperDriver" and kept its `status` as `"idea"` with no link, since V1 isn't built yet.
+- Titled the card "SuperDriver" and at first kept its `status` as `"idea"` with no link. Changed it to `"done"` once V1 was built. The body is still the project description for now; I'll replace it with my own reflection.
 - Claude Code reworded our project description in my tone because I asked it to. I'll reread it and change anything that doesn't sound like me.
 - Kept the parts a visitor cares about: what you learn, the lesson types, the Khan Academy feel, V1 (Washington only, no sign-in, 2 days) and V2 (state picker, Google sign-in, mini driving simulation), and that we're splitting the work feature by feature with AI's help.
 - Left out the lines that were instructions for the AI building the app, like "build original visuals only" and "do not copy Khan Academy branding."
+- Pointed the card's link at the SuperDriver repo at first. Claude Code found the repo is private, so it showed a 404 to anyone who isn't a collaborator, including visitors to my site. Switched to the live Vercel app instead, which Claude Code checked loads.
+- Rewrote the description in my tone from what's actually on the live app: 4 lessons, 17 skill checks, explanations when you miss a question, and progress tracking. Dropped the 2-day target, plus the scenario puzzles and timed practice test, which aren't on the home page. V2 plans stay as "next."
 
 **Abandoned:**
 
 - The Artifact 4 idea for a REU and internship resource site.
+
+## Session 10: Nov 16
+
+**Asked Claude Code for:**
+
+1. To fill in the Artifact 5 card with the live site, https://frontend-pink-eight-29.vercel.app/, and a reflection of 6 sentences or less, summarized in my tone from our brainstorm summary (`artifact #5 progress.txt`). The main thing I learned: how to research software that already exists and see what we can build that doesn't.
+
+**Decided:**
+
+- Replaced the Personal Tutoring Business idea with CareForAll, the care organization tracking app I'm building with Abdulrahman Elmi. Marked the card `"done"`.
+- Claude Code checked that the live site loads. It's a JavaScript app, so the page text only shows up once the browser runs it. Claude Code searched the app's code to confirm the three features the card mentions (offline kiosk check-in, voice logging, routine-change alerts) are on the site before naming them.
+- Claude Code wrote the reflection in my tone from the brainstorm summary because I asked it to. I'll reread it and change anything that doesn't sound like me.
+- Kept: where the idea came from, researching Procare, Brightwheel, and StoriiCare to find the gap (small programs still on paper), the three features, the voice-vs-offline tradeoff, and the operator interviews as next steps.
+
+**Abandoned:**
+
+- The Personal Tutoring Business idea for Artifact 5.
+- Parts of the brainstorm that didn't fit in 6 sentences: the Procare stat that 44% of programs without software still use paper, audio privacy, alerts as observations instead of diagnoses, the org-type architecture decision, and the 3-phase roadmap.
 
 ## Next steps
 
