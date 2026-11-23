@@ -274,6 +274,21 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 - Nothing this session.
 
+## Session 13: Nov 23
+
+**Asked Claude Code for:**
+
+- Adding this week's CareForAll progress to the Artifact 5 card, with a little more wording around my notes: we added photos for better visualization, and I haven't reached out to childcare operators yet
+
+**Decided:**
+
+- Added two sentences to the card: the real photos that replaced the gray placeholders on the home and childcare pages (free Unsplash photos, each photographer credited on the page), and that the operator interviews are still our next step.
+- Claude Code checked the CareForAll repo before writing, to confirm the photos were merged (PR #4) and which pages they're on.
+
+**Abandoned:**
+
+- The TypeScript and refresh-404 questions for this week's card. I only wrote about the photos and the interviews.
+
 ## Next steps
 
 - [x] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
