@@ -259,6 +259,21 @@ Live site: https://cm0407.github.io/Software-Projects/
 
 - Permanently deleting the old journal copy.
 
+## Session 12: Nov 22
+
+**Asked Claude Code for:**
+
+- Moving the Artifact 5 (CareForAll) card to Week 2
+
+**Decided:**
+
+- Changed `week` from 1 to 2 in `cards.js`, so the badge reads "In progress · Week 2".
+- Left the reflection text as is for now. It's my own words, and I'll decide whether to add this week's progress (TypeScript conversion, the deploy fix that made sub-pages load on refresh).
+
+**Abandoned:**
+
+- Nothing this session.
+
 ## Next steps
 
 - [x] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
