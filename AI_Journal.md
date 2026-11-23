@@ -48,8 +48,6 @@ Looking back, my Week 3 and Week 4 entries are a lot shorter and less specific t
 
 This week I used Claude webchat and Claude Code (the VS Code extension).
 
-**[YOUR TURN: add any other AI tool you used for this course this week, like ChatGPT, then delete this note.]**
-
 ### Describe a task where AI was helpful
 
 After the webchat's python command didn't work, I switched to Claude Code. Because Claude Code could see my system and my folder, it was able to figure out that `python3` doesn't run Python on Windows and gave me `python -m http.server 8000` instead, which worked. I then asked it to walk me through the rest of the Artifact 1 spec and explain why each step works instead of just giving me code to paste. It helped me add a `.gitignore`, rename my branch from `master` to `main`, and deploy my portfolio on GitHub Pages. I also learned that saving a file only changes my laptop, and the live site only updates after I `git add`, `git commit`, and `git push`.
@@ -71,8 +69,6 @@ I learned that I need to be more specific about what I want, because even after 
 
 This week I used Claude Code.
 
-**[YOUR TURN: add any other AI tool you used for this course this week, like ChatGPT, then delete this note.]**
-
 ### Describe a task where AI was helpful
 
 I asked Claude Code to make my portfolio look less bland, with a green gradient dark mode background and something more techy and mathy. It redesigned the site with a dark green theme, a graph paper background, moving sine waves in the header, and an equation box with Euler's method as a nod to my research. It took screenshots of the site at desktop and phone sizes to check its own work, noticed the waves were running through my tagline, and moved them lower. When the new design looked exactly the same on my computer, it checked my local server, saw it was already sending the new files, and figured out my browser was showing an old saved copy. Pressing Ctrl+F5 fixed it. Before I started planning my Facilitator Assistant, it also pointed out that a static site can't send emails by itself and that student names and attendance are protected by FERPA, so they can't go in a public repo.
@@ -93,8 +89,6 @@ I started asking Claude Code to teach me as we go instead of just doing things f
 
 This week I used Claude webchat and Claude Code (the VS Code extension).
 
-**[YOUR TURN: add any other AI tool you used for this course this week, like ChatGPT, then delete this note.]**
-
 ### Describe a task where AI was helpful
 This week I used AI to improve my facilitator assistant app, I also used AI to help me edit and review a grant application I was writing for Grad school. 
 ### Describe a time AI got it wrong or you had to correct it
@@ -108,8 +102,6 @@ My AI usage has stayed mostly the same this week. I am however using more projec
 ### What AI tools did you use this week?
 
 This week I used Claude webchat and Claude Code (the VS Code extension).
-
-**[YOUR TURN: add any other AI tool you used for this course this week, like ChatGPT, then delete this note.]**
 
 ### Describe a task where AI was helpful
 
@@ -157,6 +149,85 @@ I'm also continuing to use AI to study for my math classes, not just for coding.
 ### Notes
 
 Next up for SuperDrive: create the GitHub repo, decide who builds which features, set up the Next.js + Supabase project, and agree on the database schema together before we start working in parallel.
+
+---
+
+## Week 6 (Nov 9 – Nov 15)
+
+### What AI tools did you use this week?
+
+This week was almost all Claude Code, working on SuperDriver (we renamed it from SuperDrive), the driver's ed app I'm building for 490 with Abdulrahman. Once the first demo went live, Abdulrahman gave me two more jobs on top of the "report a problem" button: bring the WA Driver Guide into the project, and finish the rest of the lessons with "check your understanding" questions. I also kept using AI to study for my math classes.
+
+### Describe a task where AI was helpful
+
+The biggest task was finishing the lessons. When the week started, the site had 4 lessons live with 17 questions. By the end of the week the course had all 13 lessons and 176 questions, merged into our main branch. Here's how Claude Code helped:
+
+- **Getting set up on Windows (Nov 11):** Abdulrahman built everything on a Mac, so this was the first time the project ran on my laptop. Claude Code got Docker, the local Supabase database, and the dev server running, and it checked everything with the database tests (22 of 22 passed), lint, and a build. One check, the code formatter, failed on 24 files even though nothing was wrong with the code. Claude figured out that Git on Windows changes the line endings when it downloads files, so we set the repo to keep the original Unix line endings.
+- **Planning the lessons:** We went through the Driver Guide section by section and split it into 9 new lessons: traffic signs, turns and roundabouts, sharing the road, work zones and parking, hazards, crashes and traffic stops, impaired and distracted driving, your vehicle, and getting your license. We skipped the purely administrative parts like DOL offices and license plates, since a new driver doesn't need to study those.
+- **Fixing a bug before it could happen:** While planning, we found that our publish script was all-or-nothing. Running it made every draft lesson visible to users. If I had checked 3 lessons and published them, the 6 unchecked ones would have gone live too. We changed it so it only publishes the lessons you name, and it refuses to run if the list is empty or an ID is misspelled. We tested it with 6 different cases. We also gave each new lesson its own file, so Abdulrahman and I don't run into each other's changes.
+- **Writing 9 lessons at once:** Claude Code ran 9 AI agents in parallel, one per lesson, and each one wrote its lesson only from the official guide on dol.wa.gov. Then a second, separate agent fact-checked each lesson against the guide and fixed 92 problems. Finally, a script confirmed that all 782 guide quotes the agents cited appear word for word in the guide, so nothing was made up.
+- **Teamwork on GitHub:** I opened PR #12 with the 9 lessons and the publish fix, and Abdulrahman reviewed and merged it. He then built on it with two PRs of his own:
+  - **Fixed the answer-order bug (PR #13):** In our first 4 lessons, the correct answer was always the first choice, so you could get 100% by always clicking the top answer. Abdulrahman made the app shuffle the answer choices every time you open a lesson, and added a guard so a double click doesn't count twice. I had already spread the correct answers across all four positions in my new lessons, so they were safe either way.
+  - **Moved the first 4 lessons into their own files (PR #14):** This made the old lessons match my one-file-per-lesson setup. He also added a check that proves the move didn't change any lesson content.
+
+### Describe a time AI got it wrong or you had to correct it
+
+This week AI did get things wrong, and that's exactly why we added the second checking step. The first set of agents left out steps for handling a tire blowout and a skid. The fact-checker caught it and put the steps back in the guide's order. In other places, an answer marked as "wrong" was actually correct according to a different part of the guide, so those questions had to be reworded. If we had trusted the first draft, we would have taught learners incomplete safety steps.
+
+Claude Code also crashed my dev server. It ran a production build while my dev server was running, and the two share a folder. It told me right away and explained how to restart it. Even after two rounds of AI checking, a person still has to check each new lesson against the guide before it goes live. AI can speed up the writing, but it doesn't replace that check.
+
+### How is your approach to using AI evolving?
+
+I made it a hard rule that Claude Code has to walk me through its plan (which files change, what commands it will run, and the commit message) and wait for my OK before it does anything. Early in the week it started editing right after I said "let's do 2," and I realized I'd agreed to the idea but not the actual changes. I also told it never to add itself as an author on commits or PRs.
+
+The other change is that I'm treating AI output like a draft that needs checking, not a final answer. This week that meant using one AI to check another, using code to confirm the quotes, and still keeping a human approval step. It's the same thing I do with math: I follow along and check the steps instead of copying the answer.
+
+### Notes
+
+Next up: check the 9 new lessons against the guide and publish the ones that pass, start on the "report a problem" button, and decide where the full guide text should live so the AI reviewer can check quotes and page numbers.
+
+---
+
+## Week 7 (Nov 16 – Nov 22)
+
+### What AI tools did you use this week?
+
+This week I used Claude Code to start CareForAll, my Moonshot project (Artifact 5) with Abdulrahman. It's a web app that replaces the paper logs that childcare, senior care and disability support programs use for attendance and daily activities. Before we wrote any code, we used AI to research the market and plan the app. I also kept using AI to study for my math classes.
+
+### Describe a task where AI was helpful
+
+The biggest task was researching before building. The idea came from childcare operators we know who log everything by hand. But we didn't want to build something that already exists, so we had Claude research the apps already on the market first. Here's what it found and how it helped:
+
+- **What already exists:** Childcare is a crowded market led by Procare and Brightwheel, and it's still merging (Procare bought Playground in September). For senior care and adult day programs, tools like StoriiCare already cover attendance, care plans, medication records, family messaging and billing. Check-in, profiles and parent messaging are things every app already has, so they can't be what makes us different.
+- **Finding the gap:** Smaller programs are the ones being left behind. A Procare industry report found that 44% of programs without software still use paper and pencil. That gave us our target: small programs that still log by hand.
+- **Listing the real problems:** For childcare, the pain points are strict staff-to-child ratios, checking who's allowed to pick up a child, constant logging with busy hands (naps, meals, diapers, incidents), subsidy billing and high staff turnover.
+- **Choosing 3 features to stand out:** All three come from the same problem. Staff are busy with kids, and logging gets in the way.
+  - **Offline kiosk check-in:** a shared tablet that works without Wi-Fi and syncs later
+  - **Hands-free voice logging:** staff say "Maya napped 1 to 2:15" and it becomes a log entry
+  - **Pattern-change alerts:** flags things like nap times dropping or more absences, so staff can check in
+- **Catching tradeoffs before coding:** Claude pointed out problems I wouldn't have seen yet:
+  - Most good speech-to-text runs in the cloud, so voice logging fights with the offline kiosk.
+  - Alerts only work after weeks of logged data, so they have to come last.
+  - Audio recordings include children's names, so we have to decide when to delete them.
+  - Alerts should say "nap times dropped this week," never anything that sounds like a diagnosis.
+- **A plan instead of a pile of ideas:** We ended with a brainstorm summary and a 3-phase roadmap. Phase 1 is sign-up, child profiles and kiosk check-in. Phase 2 is voice logging and daily summaries for parents. Phase 3 is the alerts. After that we built a static home page and put it live on Vercel.
+
+### Describe a time AI got it wrong or you had to correct it
+
+When we put the site online, Claude guessed the URL of our live site and got a 200 response, which means the page loaded fine. So it looked like our site was up. But the page title said "Vite + React," and it turned out to be someone else's project at that address. A working page doesn't prove it's your page. Now we check the title and file names against our own build.
+
+The research also had limits. Claude couldn't confirm whether Vercel's free plan allows a business to use it, because the docs it could read didn't say. Instead of guessing, it wrote that down as an open question to check in the Terms of Service before any launch. It also found out GitHub Pages needs a public repo on a free account, which is why we switched to Vercel. AI research is a good starting point, but anything we'd bet the business on, like terms of service or market numbers, needs a real source checked.
+
+### How is your approach to using AI evolving?
+
+With SuperDriver, we used AI to plan how to build the app. This time we used it one step earlier, to decide what to build at all. Researching competitors first kept us from building features every app already has.
+
+The other change is that we set rules for how Claude works on this project:
+
+- It has to lay out options and tradeoffs without picking one, wait for our decision, and only then give its honest opinion.
+- It teaches as it goes, in plain language with examples.
+- It never commits or pushes without our OK.
+- Some code we type ourselves on purpose, like the router basename line, so we actually learn it instead of just watching AI write everything.
 
 ## End-of-quarter write-up
 

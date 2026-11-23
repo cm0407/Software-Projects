@@ -1,0 +1,48 @@
+Care Org Tracking App: Brainstorm Summary
+Nov 15, 2026 · @Abdulrahman Elmi
+Project overview
+We're building a web app that replaces manual, paper-based logging at care organizations: attendance, daily activities and each person's needs. It starts as a personal learning project, with the option to become a business later.
+The idea came from seeing childcare operators we know log activities and attendance by hand.
+Market landscape
+Basic check-in/out, profiles and parent messaging are table stakes, so they won't make us unique on their own.
+• Childcare: a crowded, mature market led by Procare and Brightwheel, and still consolidating (Procare acquired Playground in September 2026). Source
+• Senior care / adult day: tools like StoriiCare already cover attendance, care plans, medication records, family messaging and billing. Source
+• The gap: smaller programs remain underserved. A Procare industry report found 44% of programs without software still use paper and pencil. Source
+Target users and approach
+Childcare organizations are our first users. Senior homes come next, and a third org type is still open (candidates: after-school programs, adult disability day programs, respite care, community centers).
+At signup, a user picks their organization type and the app tailors its experience to that type. How we structure this underneath is our first architecture decision, still to be made.
+Key childcare pain points: strict staff-to-child ratios, verifying authorized pickups, constant hands-busy logging (naps, meals, diapers, incidents), subsidy billing, and high staff turnover.
+Chosen differentiating features
+All three target the same root problem: staff are busy with kids, and logging gets in the way. The pitch: log it in seconds, and the app notices what you might miss.
+Feature
+What it does
+Problem it solves
+Offline-first kiosk check-in
+Shared tablet with QR or photo tap; works without Wi-Fi and syncs later
+Slow sign-in sheets; unreliable internet at small centers
+Hands-free voice logging
+Staff say "Maya napped 1 to 2:15" and it becomes a structured log entry
+Staff can't stop to type while caring for kids
+Pattern-change alerts
+Flags shifts in routine (meals, naps, absences, repeated incidents) for a staff check-in
+Changes noticed too late, or not at all
+Known tensions and open decisions
+• Voice vs. offline: most good speech-to-text runs in the cloud. Options: queue audio until back online, use a weaker on-device recognizer, or make voice online-only.
+• Alerts need history: pattern alerts only work after weeks of clean logged data, so they come after logging is in use.
+• Observations, not diagnoses: alerts say "nap times dropped this week," never "possible developmental issue."
+• Audio privacy: recordings include children's names and details. Decide whether audio is deleted right after transcription and how we tell families.
+• Org-type architecture: separate apps per type, one shared app with a type setting that toggles features, or a shared core with pluggable modules per type. Not decided yet.
+Draft roadmap
+A starting sketch, open to reordering.
+1.  Phase 1 (core): org signup with type selection (childcare only at first), child profiles with allergies and authorized pickups, classrooms, staff accounts, kiosk check-in/out, and manual activity logging. Option: build the kiosk offline-first from day one, since retrofitting it later is harder.
+2.  Phase 2: voice logging on top of the activity log, plus a simple daily summary for parents.
+3.  Phase 3: pattern-change alerts once real data exists, starting with simple rules (attendance drops, meal and nap trends).
+Next steps
+Before writing code, talk to the childcare operators we know (about 20 minutes each).
+[ ] What do they log by hand today, and how long does it take?
+[ ] What would they never trust an app to do?
+[ ] Do their rooms have reliable Wi-Fi?
+[ ] Would staff feel comfortable speaking to a tablet in front of kids?
+[ ] What do they wish they'd been alerted about sooner?
+[ ] Ask for photos of their paper logs and sign-in sheets; these become our data model.
+[ ] Decide the org-type architecture once interviews are done.
