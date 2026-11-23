@@ -92,7 +92,7 @@ This week I used AI to improve my facilitator assistant app, I also used AI to h
 
 ### Describe a time AI got it wrong or you had to correct it
 
-There was not a time AI got anything right as I was using it
+AI did not get anything obviously wrong this week, but I double checked the outputs that were provided and asked for deeper explanations where it did not make sense to me.
 
 ### How is your approach to using AI evolving?
 
