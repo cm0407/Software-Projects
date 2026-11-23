@@ -60,7 +60,6 @@ I asked Claude webchat for a step by step guide to build and deploy my portfolio
 
 I learned that I need to be more specific about what I want, because even after I gave Claude the assignment it didn't ask me what I wanted on my webpage. I also noticed that Claude Code makes fewer mistakes than Claude on the web for tasks that depend on my system, since it can see my computer and my files, so I switched to Claude Code for building my portfolio.
 
-
 ---
 
 ## Week 2 (Oct 12 – Oct 18)
@@ -81,23 +80,25 @@ When I asked Claude Code to work on my portfolio, its first summary of what was 
 
 I started asking Claude Code to teach me as we go instead of just doing things for me. I made some of the changes myself, like fixing the status on my Artifact 4 card, and I ran the git commands to commit and push on my own, then had Claude Code check my work with `git diff`.
 
-
-
-## Week 3 (Oct  19 – Oct 25)
+## Week 3 (Oct 19 – Oct 25)
 
 ### What AI tools did you use this week?
 
 This week I used Claude webchat and Claude Code (the VS Code extension).
 
 ### Describe a task where AI was helpful
-This week I used AI to improve my facilitator assistant app, I also used AI to help me edit and review a grant application I was writing for Grad school. 
+
+This week I used AI to improve my facilitator assistant app, I also used AI to help me edit and review a grant application I was writing for Grad school.
+
 ### Describe a time AI got it wrong or you had to correct it
+
 There was not a time AI got anything right as I was using it
 
 ### How is your approach to using AI evolving?
+
 My AI usage has stayed mostly the same this week. I am however using more project based chat AI, that is I am creating a project on claude app and uploading a bunch of context files which in turn helps the AI get exactly what I require in it's responses to me.
 
-## Week 4 (Oct  26 – Nov 1)
+## Week 4 (Oct 26 – Nov 1)
 
 ### What AI tools did you use this week?
 
@@ -107,13 +108,13 @@ This week I used Claude webchat and Claude Code (the VS Code extension).
 
 This week I used AI to not only prep and study for my coding theory course midterm, help me correct my Calculus homework and also to star building an App that can be used as a helpful tool for students learning how to drive.
 
-
 ### Describe a time AI got it wrong or you had to correct it
+
 AI did not get anything wrong this week, for my coding theory class it gave me methods we hadn't studied in class which were outside of the class's scope.
 
 ### How is your approach to using AI evolving?
+
 My approach to using AI is evolving in that I am integrating AI to many more tasks in my daily life such as sending emails, writing tex code for student worksheet's and general knowledge acquisition.
- 
 
 ---
 
@@ -241,6 +242,43 @@ Answer all four:
 Tip: before writing, reread every "How is your approach evolving" answer in
 order. The pattern across them is your main point.
 -->
+
+### Outline
+
+**1. Introduction** (~150 words)
+
+- Where I started: Claude webchat and Claude Code in Week 1, mostly fixing problems as they came up
+- What I built with AI this quarter: portfolio, Facilitator Assistant, SuperDriver, CareForAll
+- Main point: My AI use has allowed me to be a better/more efficient programmer in terms of completing tasks, understanding code and learning how to use AI effectively.
+
+**2. My AI use progression** (~700–900 words)
+
+- **How my use changed (Question 1)**
+  - Early (Weeks 1–2): fixing errors and how-to questions, like the `python3` command; switching from webchat to Claude Code
+  - Middle (Weeks 3–4): more everyday tasks: projects with context files, math study, emails, LaTeX worksheets
+  - Late (Weeks 5–7): using AI before coding: planning SuperDriver, then researching what to build for CareForAll
+  - Compare one early entry to one late entry side by side
+- **What I learned to trust it for (Question 2)**
+  - Week 1: fixing problems specific to my system once it could see my files
+  - Week 2: checking its own work (screenshots, the browser cache problem)
+  - Week 6: writing 9 lessons in parallel with a fact-checking step
+  - Week 7: market research and spotting tradeoffs early
+- **What I learned not to trust it for (Question 3)**
+  - Week 1: Mac commands given without asking what computer I use
+  - Week 2: much too technical until I asked it to teach me
+  - Week 4 and math: knapsack DP table errors, methods outside my class
+  - Week 6: missing blowout and skid steps, answers marked wrong that were right
+  - Week 7: the "200 response" that was someone else's site; Vercel terms it couldn't confirm
+  - Commonalities of all these
+- **How I started controlling it**
+  - Week 2: "teach me as we go"
+  - Week 6: plan first, wait for my OK, no AI author on commits
+  - Week 7: options without picking one, typing some code myself
+
+**3. Conclusion** (~150 words)
+
+- Advice for a student starting next quarter.
+- Where I want to take my AI use next.
 
 <!--
 ENTRY TEMPLATE: copy everything between the ===== lines and paste it at the end

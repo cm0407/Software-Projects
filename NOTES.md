@@ -240,6 +240,25 @@ Live site: https://cm0407.github.io/Software-Projects/
 - The Artifact 4 project description (4 lessons, 17 skill checks, the Khan Academy feel, V2 plans).
 - Parts of the journal that didn't fit: the Supabase guest-progress and Google sign-in plan, Docker, how Claude found the problem (my dev server running since Nov 11, its own test server still running after it said it stopped it), and using AI to study for my math classes.
 
+## Session 11: Nov 22
+
+**Asked Claude Code for:**
+
+- Adding my Week 6 and Week 7 entries to `AI_Journal.md`
+- Removing the leftover "YOUR TURN: add any other AI tool…" notes from Weeks 1–4
+- Figuring out why the preview didn't show the new weeks
+- An outline for the end-of-quarter write-up (Stage 2 of 3)
+
+**Decided:**
+
+- Weeks 6 and 7 went in with my wording unchanged, formatted like Week 5.
+- The preview problem came from a second, older `AI_Journal.md` one folder up, outside the repo. It went to the Recycle Bin instead of being permanently deleted, since it still had my original Week 1–2 drafts.
+- The write-up outline follows my three parts (Introduction, My AI use progression, Conclusion), with the course's four questions placed inside them and pointers to the weeks that back up each one. The main point and the advice are left as [YOUR TURN] for me to write.
+
+**Abandoned:**
+
+- Permanently deleting the old journal copy.
+
 ## Next steps
 
 - [x] Put an idea in the Artifact 5 card (it currently says "NO IDEA YET")
